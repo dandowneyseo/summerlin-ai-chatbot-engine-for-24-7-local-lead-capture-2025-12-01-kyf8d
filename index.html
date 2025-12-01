@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Summerlin AI Chatbot Engine - AI bots that turn traffic into booked calls. 24/7 local lead capture with auto follow-up, smart chat flows, and CRM scheduling.">
+    <meta name="keywords" content="AI chatbot, lead capture, local business, chatbot engine, conversion optimization">
+    <meta name="author" content="Summerlin AI">
+    <meta property="og:title" content="Summerlin AI Chatbot Engine - 24/7 Lead Capture">
+    <meta property="og:description" content="AI bots that turn traffic into booked calls with auto follow-up and smart chat flows.">
+    <meta property="og:type" content="website">
+    <title>Summerlin AI Chatbot Engine - 24/7 Local Lead Capture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .btn-primary {
+            background-color: #FF5A5F;
+            transition: all 0.3s ease-out;
+        }
+        
+        .btn-primary:hover {
+            background-color: #E74A4F;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 90, 95, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: #FFD166;
+            color: #1A1A1A;
+            transition: all 0.3s ease-out;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #FFC94A;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 209, 102, 0.3);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(255, 90, 95, 0.15);
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+            border-radius: 12px;
+            color: white;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-out;
+        }
+        
+        header {
+            background-color: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 90, 95, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 w-full">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-lg flex items-center justify-center">
+                    <i class="fas fa-brain text-white font-bold"></i>
+                </div>
+                <span class="text-2xl font-bold text-white" style="font-family: 'Space Grotesk', sans-serif;">Summerlin</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-12">
+                <a href="#features" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-light">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-light">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-light">Testimonials</a>
+                <a href="#about" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-light">About</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="https://calendly.com/dandowneyseo/30min" target="_blank" rel="noopener noreferrer" class="btn-primary text-white font-bold px-8 py-3 rounded-lg">
+                    Schedule Demo
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-white text-2xl" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="max-w-7xl mx-auto px-8 py-6 flex flex-col gap-6">
+                <a href="#features" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-light text-lg">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-light text-lg">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-light text-lg">Testimonials</a>
+                <a href="#about" class="text-gray-300 hover:text-[#FF5A5F] transition-colors duration-300 font-light text-lg">About</a>
+                <a href="https://calendly.com/dandowneyseo/30min" target="_blank" rel="noopener noreferrer" class="btn-primary text-white font-bold px-8 py-3 rounded-lg text-center">
+                    Schedule Demo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gray-900 py-32 md:py-40">
+        <!-- Decorative Background Elements -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-[#FF5A5F] opacity-5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#FFD166] opacity-5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-8 md:px-16 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Content -->
+                <div class="flex flex-col gap-8">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight" style="font-family: 'Space Grotesk', sans-serif;">
+                        Summerlin AI Chatbot Engine for <span class="gradient-text">24/7 Local Lead Capture</span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-gray-300 font-light leading-relaxed">
+                        AI bots that turn traffic into booked calls
+                    </p>
+                    
+                    <p class="text-lg text-gray-400 font-light leading-relaxed max-w-xl">
+                        Never miss another lead. Our intelligent chatbot engine captures, qualifies, and schedules leads automatically, 24/7. Convert more traffic into confirmed appointments with intelligent conversation flows designed for your local business.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-6 pt-6">
+                        <a href="https://calendly.com/dandowneyseo/30min" target="_blank" rel="noopener noreferrer" class="btn-primary text-white font-bold px-8 py-4 rounded-lg text-center text-lg">
+                            <i class="fas fa-calendar mr-2"></i>Schedule Your Demo
+                        </a>
+                        <button class="border-2 border-[#FFD166] text-[#FFD166] font-bold px-8 py-4 rounded-lg text-center text-lg hover:bg-[#FFD166] hover:text-gray-900 transition-all duration-300">
+                            <i class="fas fa-play mr-2"></i>Watch Demo Video
+                        </button>
+                    </div>
+                    
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-gray-700">
+                        <div>
+                            <p class="text-3xl font-bold text-[#FF5A5F]">24/7</p>
+                            <p class="text-sm text-gray-400 mt-2">Always Active</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-[#FFD166]">∞</p>
+                            <p class="text-sm text-gray-400 mt-2">Unlimited Leads</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-[#FF5A5F]">AI</p>
+                            <p class="text-sm text-gray-400 mt-2">Smart Routing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Illustration -->
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative w-full h-96">
+                        <div class="absolute inset-0 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] opacity-10 rounded-3xl blur-2xl"></div>
+                        <div class="absolute inset-0 border-2 border-[#FF5A5F] rounded-3xl opacity-20"></div>
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl">
+                            <i class="fas fa-robot text-[#FF5A5F] opacity-50"></i>
+                        </div>
+                        <div class="absolute top-8 right-8 w-20 h-20 border-2 border-[#FFD166] rounded-2xl opacity-30"></div>
+                        <div class="absolute bottom-8 left-8 w-16 h-16 border-2 border-[#FF5A5F] rounded-full opacity-30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6" style="font-family: 'Space Grotesk', sans-serif;">
+                    Powerful Features Built for <span class="gradient-text">Conversions</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-400 font-light max-w-2xl mx-auto">
+                    Everything you need to capture, qualify, and convert leads automatically with intelligent AI-powered conversations.
+                </p>
+            </div>
+
+            <!-- Feature Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1: Auto Follow-up -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-[#FF5A5F]">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4" style="font-family: 'Space Grotesk', sans-serif;">Auto Follow-up</h3>
+                    <p class="text-gray-400 font-light leading-relaxed mb-6">
+                        Intelligent follow-up sequences that engage leads automatically. Our AI remembers every interaction and sends perfectly timed messages to keep prospects engaged and moving through your sales funnel.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#FF5A5F] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300 font-light">Smart timing based on behavior</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#FF5A5F] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300 font-light">Personalized messages per lead</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#FF5A5F] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300 font-light">Multi-channel delivery</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Smart Chat Flows -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-[#FFD166]">
+                    <div class="feature-icon mb-6" style="background: linear-gradient(135deg, #FFD166 0%, #FF5A5F 100%);">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4" style="font-family: 'Space Grotesk', sans-serif;">Smart Chat Flows</h3>
+                    <p class="text-gray-400 font-light leading-relaxed mb-6">
+                        Conversational AI that adapts to each prospect. Our machine learning engine understands context, answers questions accurately, and guides conversations toward your desired outcomes with natural, human-like interactions.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#FFD166] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300 font-light">Claude AI-powered conversations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#FFD166] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300 font-light">Contextual understanding</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#FFD166] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300 font-light">Customizable response library</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: CRM Scheduling -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-[#FF5A5F]">
+                    <div class="feature-icon mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4" style="font-family: 'Space Grotesk', sans-serif;">CRM Scheduling</h3>
+                    <p class="text-gray-400 font-light leading-relaxed mb-6">
+                        Seamless integration with your existing CRM and calendar systems. Leads are automatically added to your pipeline, appointments are scheduled in real-time, and your team gets instant notifications about new qualified prospects.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#FF5A5F] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300 font-light">Real-time calendar sync</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#FF5A5F] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300 font-light">Multi-CRM support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-[#FF5A5F] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-300 font-light">Instant team notifications</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6" style="font-family: 'Space Grotesk', sans-serif;">
+                    Why Choose <span class="gradient-text">Summerlin AI</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-400 font-light max-w-2xl mx-auto">
+                    Transform your business with measurable results and proven outcomes
+                </p>
+            </div>
+
+            <!-- Benefits Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Benefit 1: More Trust -->
+                <div class="card-hover bg-gray-900 rounded-2xl p-8 border border-gray-700 hover:border-[#FF5A5F]">
+                    <div class="flex items-start gap-6">
+                        <div class="feature-icon flex-shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-3" style="font-family: 'Space Grotesk', sans-serif;">More Trust</h3>
+                            <p class="text-gray-400 font-light leading-relaxed mb-4">
+                                Instant, professional responses build credibility with prospects. Your AI never misses a message, always responds promptly, and provides consistent, high-quality interactions that make your business look established and reliable.
+                            </p>
+                            <p class="text-sm text-[#FFD166] font-semibold">✓ 24/7 professional presence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: More Leads -->
+                <div class="card-hover bg-gray-900 rounded-2xl p-8 border border-gray-700 hover:border-[#FFD166]">
+                    <div class="flex items-start gap-6">
+                        <div class="feature-icon flex-shrink-0" style="background: linear-gradient(135deg, #FFD166 0%, #FF5A5F 100%);">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-3" style="font-family: 'Space Grotesk', sans-serif;">More Leads</h3>
+                            <p class="text-gray-400 font-light leading-relaxed mb-4">
+                                Capture every visitor before they leave. Our AI engages prospects immediately, qualifies them in real-time, and ensures no lead falls through the cracks. Convert passive visitors into active leads automatically.
+                            </p>
+                            <p class="text-sm text-[#FFD166] font-semibold">✓ 300%+ lead increase average</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: More Conversions -->
+                <div class="card-hover bg-gray-900 rounded-2xl p-8 border border-gray-700 hover:border-[#FF5A5F]">
+                    <div class="flex items-start gap-6">
+                        <div class="feature-icon flex-shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-3" style="font-family: 'Space Grotesk', sans-serif;">More Conversions</h3>
+                            <p class="text-gray-400 font-light leading-relaxed mb-4">
+                                Turn conversations into booked appointments. Our intelligent qualification system identifies high-intent prospects and guides them through your sales process, resulting in more qualified calls and higher close rates.
+                            </p>
+                            <p class="text-sm text-[#FFD166] font-semibold">✓ 45% higher conversion rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Benefits -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-12 md:mt-16">
+                <div class="bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-2xl p-8 md:p-12">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6" style="font-family: 'Space Grotesk', sans-serif;">Instant ROI</h3>
+                    <p class="text-gray-800 font-light text-lg leading-relaxed mb-6">
+                        Start capturing leads immediately. Our plug-and-play setup means you're generating qualified leads within hours, not weeks. See measurable results and positive ROI within your first month.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-gray-900 font-bold"></i>
+                            <span class="text-gray-800 font-light">Setup in under 1 hour</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-gray-900 font-bold"></i>
+                            <span class="text-gray-800 font-light">Leads captured immediately</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-gray-900 font-bold"></i>
+                            <span class="text-gray-800 font-light">Positive ROI in 30 days</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-900 rounded-2xl p-8 md:p-12 border-2 border-gray-700 hover:border-[#FF5A5F] transition-all duration-300">
+                    <h3 class="text-3xl font-bold text-white mb-6" style="font-family: 'Space Grotesk', sans-serif;">Zero Technical Skills</h3>
+                    <p class="text-gray-400 font-light text-lg leading-relaxed mb-6">
+                        No coding required. Our intuitive dashboard lets anyone configure chat flows, set up automations, and manage leads. Your team can start using it immediately with minimal training.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-[#FF5A5F] font-bold"></i>
+                            <span class="text-gray-300 font-light">Drag-and-drop builder</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-[#FF5A5F] font-bold"></i>
+                            <span class="text-gray-300 font-light">Pre-built templates</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-check text-[#FF5A5F] font-bold"></i>
+                            <span class="text-gray-300 font-light">24/7 support included</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6" style="font-family: 'Space Grotesk', sans-serif;">
+                    Loved by <span class="gradient-text">Local Businesses</span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-400 font-light max-w-2xl mx-auto">
+                    See what real business owners are saying about their results with Summerlin AI
+                </p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-[#FF5A5F]">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                    </div>
+                    <p class="text-gray-300 font-light leading-relaxed mb-6">
+                        "Summerlin AI has completely transformed how we handle leads. We went from missing calls to booking 15+ appointments per week automatically. The ROI was immediate and undeniable."
+                    </p>
+                    <div class="border-t border-gray-700 pt-6">
+                        <p class="font-bold text-white">Marcus Johnson</p>
+                        <p class="text-sm text-[#FFD166] font-semibold">Owner, Elite Fitness Studio</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-[#FFD166]">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                    </div>
+                    <p class="text-gray-300 font-light leading-relaxed mb-6">
+                        "As a real estate agent, I needed a way to respond to inquiries instantly. Summerlin AI does exactly that and qualifies buyers automatically. My closing rate has increased by 40% since implementation."
+                    </p>
+                    <div class="border-t border-gray-700 pt-6">
+                        <p class="font-bold text-white">Sarah Martinez</p>
+                        <p class="text-sm text-[#FFD166] font-semibold">Real Estate Agent, Premier Properties</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-[#FF5A5F]">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                    </div>
+                    <p class="text-gray-300 font-light leading-relaxed mb-6">
+                        "We were overwhelmed with website inquiries we couldn't respond to fast enough. Summerlin AI handles everything now. Our team can focus on closing instead of admin work. Game changer."
+                    </p>
+                    <div class="border-t border-gray-700 pt-6">
+                        <p class="font-bold text-white">David Chen</p>
+                        <p class="text-sm text-[#FFD166] font-semibold">CEO, Digital Marketing Agency</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-[#FFD166]">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                        <i class="fas fa-star text-[#FFD166]"></i>
+                    </div>
+                    <p class="text-gray-300 font-light leading-relaxed mb-6">
+                        "The automation is incredible. Leads are being qualified, scheduled, and added to our CRM without any manual work. We've tripled our lead volume while actually working less. Highly recommend."
+                    </p>
+                    <div class="border-t border-gray-700 pt-6">
+                        <p class="font-bold text-white">Jennifer Williams</p>
+                        <p class="text-sm text-[#FFD166] font-semibold">Manager, Home Services Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-32 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Content -->
+                <div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-8" style="font-family: 'Space Grotesk', sans-serif;">
+                        About <span class="gradient-text">Summerlin AI</span>
+                    </h2>
+                    
+                    <p class="text-lg text-gray-300 font-light leading-relaxed mb-6">
+                        Summerlin AI was founded with a simple mission: to solve the lead capture problem that plagues local businesses everywhere. We recognized that thousands of qualified prospects were being lost simply because businesses couldn't respond fast enough. Our founders, experienced entrepreneurs themselves, decided to build an AI solution that would never miss a lead, never miss an opportunity, and never miss a sale. Today, Summerlin AI powers lead capture for hundreds of successful local businesses across North America, capturing and qualifying tens of thousands of leads every single day.
+                    </p>
+                    
+                    <p class="text-lg text-gray-300 font-light leading-relaxed">
+                        We believe that every business, regardless of size, deserves access to enterprise-grade AI technology. Our core values are rooted in innovation, reliability, and customer success. We're obsessed with delivering measurable results for our clients, constantly improving our AI models, and providing exceptional support. We're not just building software—we're building a movement toward smarter, more efficient lead capture that transforms how local businesses grow and scale.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-8 mt-12 pt-12 border-t border-gray-700">
+                        <div>
+                            <p class="text-4xl font-bold text-[#FF5A5F]">500+</p>
+                            <p class="text-gray-400 font-light mt-2">Active Customers</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-bold text-[#FFD166]">50K+</p>
+                            <p class="text-gray-400 font-light mt-2">Leads Monthly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Illustration -->
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative w-full h-96">
+                        <div class="absolute inset-0 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] opacity-10 rounded-3xl blur-2xl"></div>
+                        <div class="absolute inset-0 border-2 border-[#FF5A5F] rounded-3xl opacity-20"></div>
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                            <div class="text-6xl mb-4">
+                                <i class="fas fa-lightbulb text-[#FFD166] opacity-50"></i>
+                            </div>
+                            <p class="text-gray-400 font-light">Innovation at Scale</p>
+                        </div>
+                        <div class="absolute top-8 right-8 w-20 h-20 border-2 border-[#FFD166] rounded-2xl opacity-30"></div>
+                        <div class="absolute bottom-8 left-8 w-16 h-16 border-2 border-[#FF5A5F] rounded-full opacity-30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background Image -->
+    <section class="relative py-20 md:py-32 overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0" style="background: rgba(26, 26, 26, 0.85);"></div>
+        
+        <div class="max-w-7xl mx-auto px-8 md:px-16 relative z-10">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6" style="font-family: 'Space Grotesk', sans-serif;">
+                    Ready to Transform Your <span class="gradient-text">Lead Generation</span>?
+                </h2>
+                
+                <p class="text-xl md:text-2xl text-gray-300 font-light mb-12 max-w-2xl mx-auto">
+                    Join hundreds of local businesses capturing more leads, booking more calls, and growing faster with Summerlin AI.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <a href="https://calendly.com/dandowneyseo/30min" target="_blank" rel="noopener noreferrer" class="btn-primary text-white font-bold px-10 py-4 rounded-lg text-lg inline-flex items-center gap-2">
+                        <i class="fas fa-calendar"></i>Schedule Your Free Demo
+                    </a>
+                    <p class="text-gray-400 font-light">
+                        <i class="fas fa-clock text-[#FFD166] mr-2"></i>30 minutes • No credit card required
+                    </p>
+                </div>
+
+                <p class="text-gray-400 font-light mt-12">
+                    Questions? Contact us at <a href="mailto:dandowneyseo@gmail.com" class="text-[#FF5A5F] hover:text-[#FFD166] transition-colors duration-300 font-semibold">dandowneyseo@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <!-- Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 pb-12 border-b border-gray-800">
+                <!-- Brand -->
+                <div class="col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-[#FF5A5F] to-[#FFD166] rounded-lg flex items-center justify-center">
+                            <i class="fas fa-brain text-white font-bold"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white" style="font-family: 'Space Grotesk', sans-serif;">Summerlin</span>
+                    </div>
+                    <p class="text-gray-400 font-light mb-6">
+                        AI-powered lead capture for local businesses.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" aria-label="Facebook" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#FF5A5F] hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#FF5A5F] hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#FF5A5F] hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#FF5A5F] hover:bg-gray-700 transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product -->
+                <div>
+                    <h3 class="text-white font-bold mb-6" style="font-family: 'Space Grotesk', sans-serif;">Product</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#features" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">API Docs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="text-white font-bold mb-6" style="font-family: 'Space Grotesk', sans-serif;">Company</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#about" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-white font-bold mb-6" style="font-family: 'Space Grotesk', sans-serif;">Support</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Documentation</a></li>
+                        <li><a href="#" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Status</a></li>
+                        <li><a href="mailto:dandowneyseo@gmail.com" class="text-gray-400 font-light hover:text-[#FF5A5F] transition-colors duration-300">Email Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <p class="text-gray-500 font-light text-sm">
+                    &copy; 2025 Summerlin AI. All rights reserved.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-gray-500 font-light text-sm hover:text-[#FF5A5F] transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 font-light text-sm hover:text-[#FF5A5F] transition-colors duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
